@@ -95,6 +95,8 @@ nav{
 .cuerpo{
     padding-top: 50px;
     padding-right: 30px;
+    word-spacing: 5pt;  /*Separación entre palabras*/
+    line-height: 20pt; /*Separación entre lineas*/
 }
 .imagen{
     width: 60%;
