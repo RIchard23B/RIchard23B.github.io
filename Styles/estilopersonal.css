@@ -24,19 +24,19 @@ nav{
     margin: 0;
     
 }
-.menu li a{
+.menu ul a{
     text-decoration: none; /*Quita el subrayado de las letras*/
     color: white;
     padding: 20px;
     display: inline-block;
     
 }
-.menu li{
+.menu ul{
     padding-top: 30px;
     padding-right: 100px;
 }
 
-.menu li a:hover{
+.menu ul a:hover{
     background: #ef8354;
 }
 
