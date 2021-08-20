@@ -62,7 +62,11 @@ nav{
     line-height: 30px;
     font-size: 60px;
     padding-bottom: 50px ;/*Separación entre "Hola soy Richard"y "Estudiante de ING"*/
-    color: coral;
+    color: white;
+}
+.contenido-slider p{
+    color: white;
+    font-size: 25px;
 }
 
 
@@ -70,10 +74,10 @@ nav{
 /*Body*/
 
 .titulo{
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 30px;
     color: blueviolet;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 60px; /*Para distinguirlo de cada sección*/
 
@@ -96,5 +100,6 @@ nav{
     width: 60%;
 }
 
+/*footer*/
 
 
