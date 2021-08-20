@@ -118,6 +118,9 @@ footer{
 .foo-contenedor{
     padding: 5px;
 }
+.foo-contenedor img{
+    width: 30px;
+}
 .titulo-final{
     text-align: center;
     font-size: 24px;
