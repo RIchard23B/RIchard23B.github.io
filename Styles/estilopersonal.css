@@ -1,23 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Quitar la separación de los lados*/
+}
+
 body{
-    font-family: "Open Sans", Helvetica;
+    font-family: Arial, Helvetica;
     background: #cccaca;
+    
 }
 
 /*Menu*/
+nav{
+    position: absolute; /*Provoca que todo modifique su posición*/
+    z-index: 1;/*El menú queda en la parte de atrás, este lo trae adelante*/
+}
 .menu{
+    text-align: right;
     list-style: none;
     padding: 0;
-    background: #092327;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
+    background: transparent;
+    width: 100%;
+    margin: 0;
+    
 }
 .menu li a{
-    text-decoration: none;
+    text-decoration: none; /*Quita el subrayado de las letras*/
     color: white;
     padding: 20px;
     display: inline-block;
-    text-align: center;
+    
+}
+.menu li{
+    padding-top: 30px;
+    padding-right: 100px;
 }
 
 .menu li a:hover{
@@ -26,19 +42,59 @@ body{
 
 /*Slider*/
 
-.contenedor{
-    width: 100%;
-}
-
 .contenido-slider{
     width: 100%;
-    height: 600%;
-    display: flex;
-    justify-content: space-around;
+    height: 800px;
+    display: flex; /*Centrar el titulo*/
+    justify-content: center;
     align-items: center;
-    background: url(/Imagenes/portada.jpg);
-    background-size: cover;
+    text-align: center; /*Centra la palabra*/
+    flex-direction: column; /*Convierte en columnas*/
+    background: url(/Imagenes/fondo.jpg);
+    background-size: cover; /*Tamaño de imagenes, escala la imagen al mayor tamaño posible sin estirarla*/
+    background-attachment: fixed;/*Efecto de movimiento de imagen*/
+    position: relative;
 }
-.contenido-slider > img{
-    width: 400%;
+
+
+.contenido-slider h2 {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 60px;
+    padding-bottom: 50px ;/*Separación entre "Hola soy Richard"y "Estudiante de ING"*/
+    color: coral;
 }
+
+
+
+/*Body*/
+
+.titulo{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: blueviolet;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px; /*Para distinguirlo de cada sección*/
+
+}
+.cuerpo-contenedor{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+    width: 90%;
+    max-width: 1000px;
+    text-align: justify;
+    margin: auto; /*Centrar todo*/
+    overflow: hidden;/*Esconde lo que sale del cuerpo*/
+}
+.cuerpo{
+    padding-top: 50px;
+    padding-right: 30px;
+}
+.imagen{
+    width: 60%;
+}
+
+
+
