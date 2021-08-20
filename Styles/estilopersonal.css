@@ -47,7 +47,7 @@ nav{
     height: 800px;
     display: flex; /*Centrar el titulo*/
     justify-content: center;
-    align-items: center;
+    align-items: center;/*Distribuye los espacios,flex star: izquiera, flex-end: derecha y así*/
     text-align: center; /*Centra la palabra*/
     flex-direction: column; /*Convierte en columnas*/
     background: url(/Imagenes/fondo.jpg);
@@ -101,5 +101,26 @@ nav{
 }
 
 /*footer*/
-
-
+footer{
+    background:#272727;
+    padding: 50px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;/*Rayita abajo*/
+}
+.foo-contenedor{
+    padding: 5px;
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
