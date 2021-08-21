@@ -60,16 +60,14 @@ nav{
 .contenido-slider h2 {
     font-weight: 300;
     line-height: 30px;
-    font-size: 60px;
+    font-size: 60pt;
     padding-bottom: 50px ;/*Separación entre "Hola soy Richard"y "Estudiante de ING"*/
     color: white;
 }
 .contenido-slider p{
     color: white;
-    font-size: 25px;
+    font-size: 25pt;
 }
-
-
 
 /*Body*/
 
@@ -101,6 +99,50 @@ nav{
 .imagen{
     width: 60%;
 }
+
+/*Página de about*/
+/*Slider*/
+.contenido-slider-about{
+    width: 100%;
+    height: 200px;
+    display: flex; /*Centrar el titulo*/
+    justify-content: space-around;
+    align-items:flex-start;/*Distribuye los espacios,flex start: izquiera, flex-end: derecha y así*/
+    text-align: right; /*Centra la palabra*/
+    flex-direction:column; /*Convierte en columnas*/
+    background: url(/Imagenes/about.jpg);
+    background-size: cover; /*Tamaño de imagenes, escala la imagen al mayor tamaño posible sin estirarla*/
+    background-attachment: fixed;/*Efecto de movimiento de imagen*/
+    position: relative;
+}
+
+.contenido-slider-about h3{
+    padding-left: 100px;
+    font-size: 30pt;
+    color: white;
+}
+
+/*Contendio*/
+.galeria-about{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-about{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.imagen-about > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Soluciona error de la imagen, ancho y alto*/
+    display: block;
+}
+
+
+
 
 /*footer*/
 footer{
