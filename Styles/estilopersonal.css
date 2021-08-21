@@ -6,7 +6,7 @@
 
 body{
     font-family: Arial, Helvetica;
-    background: #cccaca;
+    background: #e4e4e4;
     
 }
 
@@ -150,8 +150,20 @@ nav{
     padding-left: 20px;
 }
 
+/*Contactos*/
 
-
+.contacto {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.contacto h3{
+    padding-right: 200px;
+}
+.cuerpo-contenedor h4{
+    font-size: 25px;
+}
 
 /*footer*/
 footer{
