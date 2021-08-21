@@ -45,7 +45,7 @@ nav{
 .contenido-slider{
     width: 100%;
     height: 800px;
-    display: flex; /*Centrar el titulo*/
+    display: flex; /* Ayuda a distribuir el espacio entre los items y alineación (contenedor)*/
     justify-content: center;
     align-items: center;/*Distribuye los espacios,flex star: izquiera, flex-end: derecha y así*/
     text-align: center; /*Centra la palabra*/
