@@ -35,9 +35,11 @@ body{
 .momo{
     padding-top: 250px;
     font-size: 40pt;
+    color: white;
 }
 .slide > p{
     font-size: 20pt;
+    color: white;
 }
 .cuerpo-contenedor{
     padding-top: 20%;
@@ -59,9 +61,11 @@ body{
         padding-top: 80px;
         font-size: 25px;
         width: 90%;
+        
     }
     .slide > p{
         font-size: 10pt;
+       
     }
     .cuerpo-contenedor{
         padding: 1;
