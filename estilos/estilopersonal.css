@@ -1,44 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /*Quitar la separación de los lados*/
-}
-
 body{
-    font-family: Arial, Helvetica;
-    background: #e4e4e4;
+    overflow-x: hidden;
+}
+/*=========MENU==========*/
+#menu a{
     
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+#menu form > button{
+ font-size: 18px;
+ font-weight: bold;
+}
+.navbar-collapse{
+    flex-grow: none;
 }
 
-/*Menu*/
-nav{
-    position: absolute; /*Provoca que todo modifique su posición*/
-    z-index: 1;/*El menú queda en la parte de atrás, este lo trae adelante*/
+/*=========SLIDER==========*/
+.carousel-inner{
+    max-height: 39rem;
+    
 }
-.menu{
-    text-align: right;
-    list-style: none;
-    padding: 0;
-    background: transparent;
+.slide{
     width: 100%;
-    margin: 0;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    position:absolute;
 }
-.menu ul li a{
-    text-decoration: none; /*Quita el subrayado de las letras*/
-    color: white;
-    padding: 20px;
-    display: inline-block;
-    
+.momo{
+    padding-top: 250px;
+    font-size: 40pt;
 }
-.menu ul li{
-    padding-top: 30px;
-    padding-right: 100px;
+.slide > p{
+    font-size: 20pt;
+}
+.cuerpo-contenedor{
+    padding-top: 20%;
+}
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+    .carousel-inner{
+        max-height: 12rem;
+        
+    }
+    .contenedor{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .momo{
+        padding-top: 80px;
+        font-size: 25px;
+        width: 90%;
+    }
+    .slide > p{
+        font-size: 10pt;
+    }
+    .cuerpo-contenedor{
+        padding: 1;
+    }
+    .cuerpo-contenedor .contenido-texto{
+        width: 90%;
+    }
+    .imagen-intro{
+        display: none;
+    }
 }
 
-.menu ul li a:hover{
-    background: #ef8354;
-}
 
 /*Slider*/
 
@@ -81,8 +116,6 @@ nav{
 
 }
 .cuerpo-contenedor{
-    display: flex;
-    justify-content: space-evenly;
     padding-bottom: 60px;
     width: 90%;
     max-width: 1000px;
@@ -90,15 +123,21 @@ nav{
     margin: auto; /*Centrar todo*/
     overflow: hidden;/*Esconde lo que sale del cuerpo*/
 }
-.cuerpo{
+.contenedor{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenido-texto{
     padding-top: 50px;
     padding-right: 30px;
     word-spacing: 5pt;  /*Separación entre palabras*/
     line-height: 20pt; /*Separación entre lineas*/
 }
-.imagen{
+.contenedor img{
     width: 60%;
 }
+
 
 /*Página de about*/
 /*Slider*/
@@ -153,7 +192,7 @@ nav{
 
 /*Contactos*/
 .contactame{
-    background-image: url(/Imagenes/csgo.png);
+    background-image: url(/imagen/csgo.png);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;

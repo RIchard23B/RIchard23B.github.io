@@ -7,43 +7,89 @@
         <title>Mi página principal</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="Styles/estilopersonal.css">
-        <link rel="icon" type="image/png" href="Imagenes/icoico.ico"/>
-        <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" /-->
+        <link rel="stylesheet" href="estilos/estilopersonal.css">
+        <link rel="icon" type="image/png" href="imagen/icoico.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
     </head>
     <body>
+        <!--div class="socia">
+            <ul class="redes-sociales">
+                <li class="sociales">Linkendln<a href="https://www.linkedin.com/in/richard-anderson-briones-quiliche-5b1091196/" target="_blank" class="social"><i class="fa fa-linkedin linkedin icon"></i></a></li>
+                <li class="sociales">Facebook<a href="https://www.facebook.com/richard.brionesquiliche/" target="_blank" class="social"><i class="fa fa-facebook facebook icon"></i></a></li>
+                <li class="sociales">Youtube<a href="https://www.youtube.com/channel/UCFXn-_Vu_YOzL9iPgjkZh3A" class="social"><i class="fa fa-youtube youtube icon"></i></a></li>
+                <li class="sociales">Instagram<a href="https://www.instagram.com/rich.briones/?hl=es" target="_blanck" class="social"><i class="fa fa-instagram instagram icon"></i></a></li>
+            </ul>
+        </div-->
         <header>
-            <nav class="menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                        <a href="About.html">About</a>
-                        <a href="Contacto.html">Contacto</a>
-                    </li>
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0" id="menu">
+                <div class="container-fluid">
+                  <a class="navbar-brand text-white" href="#">Navbar</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse flex-grow-0 p-md-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                      </li>
+                    </ul>
                     
-                </ul>
-            </nav>              
-            <section class="contenido-slider">         
-                <h2>Hola, Soy Richard Briones</h2> 
+            
+                  </div>
+                </div>
+            </nav>
+            
+            <!-- ============= SLIDER===================-->
+            <!-- =======================================-->
+            <div id="carouselExampleControls" class="carousel slide position-absolute" data-bs-ride="carousel">
+                <div class="carousel-inner" >
+                  <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="imagen/slider.jpg" class="d-block w-100" alt="slide1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagen/fondo.jpg" class="d-block w-100" alt="slide2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagen/portada.jpg" class="d-block w-100" alt="slide3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+              <!-- ============= INTRO ===================-->
+            <!-- =======================================-->
+            <section class="carousel slide">         
+                <h2 class="momo">Hola, Soy Richard Briones</h2> 
                 <p>Estudiante de Ingeniería de Sistemas</p>        
             </section>
-            
         </header>
-
-        <main>
-            <h2 class="titulo">Bienvenido a mi Sitio</h2>
-
+        <main> 
             <section class="cuerpo-contenedor">
-                <section class="cuerpo">
-                    <p>Mi nombre es Richard Briones, estudio la carrera de <b>Ingeniería 
-                        de Sistemas</b>. Tengo 22 años y mis aspiraciones a corto es obtener
-                        el bachiller y lograr titularme. Metas a largo plazo es poder trabajar en algo que me guste, viajar para conocer más lugares.
-                    </p>
-                </section>
-                <div class="imagen">
-                    <img src="/Imagenes/portada.jpg" alt="">
-                </div>
-                
+                    <div class="contenedor">
+                        <div class="contenido-texto">
+                            <p>Mi nombre es Richard Briones, estudio la carrera de <b>Ingeniería 
+                                de Sistemas</b>. Tengo 22 años y mis aspiraciones a corto es obtener
+                                el bachiller y lograr titularme. Metas a largo plazo es poder trabajar en algo que me guste, viajar para conocer más lugares.
+                             </p>
+                        </div>
+                        <img src="imagen/portada.jpg" alt="" class="imagen-intro">
+                    </div>
             </section>
            
         </main>
@@ -51,19 +97,21 @@
         <footer>
             <div class="contenedor-footer">
                 <div class="foo-contenedor">
-                    <a href="https://www.facebook.com/richard.brionesquiliche/" target="_blank"><img src="/Imagenes/facebook.png" alt="" ></a>
+                    <a href="https://www.facebook.com/richard.brionesquiliche/" target="_blank"><img src="imagen/facebook.png" alt="" ></a>
                 </div>
                 <div class="foo-contenedor">
-                    <a href="https://www.instagram.com/rich.briones/?hl=es" target="_blank" ><img src="Imagenes/instagram.png" alt="" ></a>
+                    <a href="https://www.instagram.com/rich.briones/?hl=es" target="_blank" ><img src="imagen/instagram.png" alt="" ></a>
                 </div>
                 <div class="foo-contenedor">
-                    <a href="https://www.youtube.com/channel/UCFXn-_Vu_YOzL9iPgjkZh3A" target="_blank"><img src="Imagenes/youtube.png" alt="" ></a>
+                    <a href="https://www.youtube.com/channel/UCFXn-_Vu_YOzL9iPgjkZh3A" target="_blank"><img src="imagen/youtube.png" alt="" ></a>
                 </div>
                 <div class="foo-contenedor">
-                    <a href="https://www.linkedin.com/in/richard-anderson-briones-quiliche-5b1091196/" target="_blank"><img src="Imagenes/linkendln.png" alt=""></a>
+                    <a href="https://www.linkedin.com/in/richard-anderson-briones-quiliche-5b1091196/" target="_blank"><img src="imagen/linkendln.png" alt=""></a>
                 </div>
             </div>
             <h3 class="titulo-final">&copy; Richard Briones</h3>
         </footer>
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html> 
