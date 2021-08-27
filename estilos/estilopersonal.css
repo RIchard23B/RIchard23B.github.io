@@ -78,36 +78,6 @@ body{
     }
 }
 
-
-/*Slider*/
-
-.contenido-slider{
-    width: 100%;
-    height: 800px;
-    display: flex; /* Ayuda a distribuir el espacio entre los items y alineación (contenedor)*/
-    justify-content: center;
-    align-items: center;/*Distribuye los espacios,flex star: izquiera, flex-end: derecha y así*/
-    text-align: center; /*Centra la palabra*/
-    flex-direction: column; /*Convierte en columnas*/
-    background: url(/Imagenes/fondo.jpg);
-    background-size: cover; /*Tamaño de imagenes, escala la imagen al mayor tamaño posible sin estirarla*/
-    background-attachment: fixed;/*Efecto de movimiento de imagen*/
-    position: relative;
-}
-
-
-.contenido-slider h2 {
-    font-weight: 300;
-    line-height: 30px;
-    font-size: 60pt;
-    padding-bottom: 50px ;/*Separación entre "Hola soy Richard"y "Estudiante de ING"*/
-    color: white;
-}
-.contenido-slider p{
-    color: white;
-    font-size: 25pt;
-}
-
 /*Body*/
 
 .titulo{
@@ -145,26 +115,6 @@ body{
 
 /*Página de about*/
 /*Slider*/
-.contenido-slider-about{
-    width: 100%;
-    height: 200px;
-    display: flex; /*Centrar el titulo*/
-    justify-content: space-around;
-    align-items:flex-start;/*Distribuye los espacios,flex start: izquiera, flex-end: derecha y así*/
-    text-align: right; /*Centra la palabra*/
-    flex-direction:column; /*Convierte en columnas*/
-    background: url(/Imagenes/about.jpg);
-    background-size: cover; /*Tamaño de imagenes, escala la imagen al mayor tamaño posible sin estirarla*/
-    background-attachment: fixed;/*Efecto de movimiento de imagen*/
-    position: relative;
-}
-
-
-.contenido-slider-about h3{
-    padding-left: 100px;
-    font-size: 30pt;
-    color: white;
-}
 
 /*Contendio*/
 .galeria-about{
@@ -254,24 +204,47 @@ textarea{
 /*footer*/
 footer{
     background:#272727;
-    padding: 50px 0 30px 0;
+    padding: 60px 0 30px 0;
     margin: auto;
     overflow: hidden;
 }
 .contenedor-footer{
     display: flex;
     width: 90%;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;/*Rayita abajo*/
 }
-.foo-contenedor{
-    padding: 5px;
+.content-foo{
+    text-align: center;
 }
-.foo-contenedor img{
-    width: 30px;
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
 }
+.content-foo p{
+    color: #ccc;
+}
+@media screen and (max-width:900px){
+    footer{
+        background-position: center;
+    }
+    .contenedor-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-foo{
+        padding: 20px;
+    }
+    .content-foo h4{
+        font-size: 20px;
+    }
+}
+
 .titulo-final{
     text-align: center;
     font-size: 24px;
