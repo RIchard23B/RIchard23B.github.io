@@ -88,6 +88,7 @@ body{
 .titulo{
     padding-top: 100px;
     padding-bottom: 30px;
+    font-family: 'Open Sans', sans-serif;
     color: blueviolet;
     font-size: 50px;
     text-align: center;
@@ -117,11 +118,43 @@ body{
     width: 60%;
 }
 
-
-/*Página de about*/
-/*Slider*/
-
+/*========== Página de about ============*/
 /*Contendio*/
+#carouselExampleDark{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; /*Centrar todo*/
+    overflow: hidden;
+}
+
+#carouselExampleOther{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; /*Centrar todo*/
+    overflow: hidden;
+}
+#carouselExampleSlider3{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto; /*Centrar todo*/
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.carousel-caption h5 p{
+    color: white;
+}
+/*Para que el carousel tenga un tamaño estandar en las imagenes*/
+#carousel-mod {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 .galeria-about{
     display: flex;
     justify-content: space-evenly;
@@ -209,13 +242,13 @@ textarea{
 /*footer*/
 footer{
     background:#272727;
-    padding: 60px 0 30px 0;
+    padding: 40px 0 20px 0;
     margin: auto;
     overflow: hidden;
 }
 .contenedor-footer{
     display: flex;
-    width: 90%;
+    width: 70%;
     justify-content: space-evenly;
     margin: auto;
     padding-bottom: 50px;
@@ -226,7 +259,7 @@ footer{
 }
 .content-foo h4{
     color: #fff;
-    border-bottom: 3px solid #af20d3;
+    border-bottom: 2px solid #af20d3;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }

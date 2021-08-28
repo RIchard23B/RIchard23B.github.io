@@ -10,7 +10,13 @@
         <link rel="stylesheet" href="estilos/estilopersonal.css">
         <link rel="icon" type="image/png" href="imagen/icoico.ico"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    </head>
+        
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      </head>
+
     <body >
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-dark p-0" id="menu">
@@ -31,86 +37,167 @@
                         <a class="nav-link text-white" href="Contacto.html">Contacto</a>
                       </li>
                     </ul>
-                    
-            
                   </div>
                 </div>
             </nav>
         </header>
 
+  <!-- ============= CUERPO ===================-->
+            <!-- =======================================-->
         <main>
-            <section>
-                <h3 class="titulo">Mis Hobbies</h3>
-                  <div class="cuerpo-contenedor">
-                      <div class="galeria-about">
-                          <div class="imagen-about">
-                            <img src="https://www.mancomunidaddetentudia.com/portal/wp-content/uploads/2020/05/viajar-focus-0-0-983-557.jpg" alt="">
-                                <h3>Viajar</h3>
-                          </div>
-                          <div class="imagen-about">
-                            
-                            <img src="https://www.superprof.com.ar/blog/wp-content/uploads/2020/03/aprender-guitarra-principiante-1060x704.jpg" alt="">
-                               <h3>Tocar guitarra</h3>
-                          </div>
-                          <div class="imagen-about">
-                            <img src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/15-curiosidades-sobre-la-serie-vikingos/logo/110709774-1-esl-ES/logo.jpg?resize=480:*" alt="">
-                                <h3>Mirar Series</h3>
-                          </div>
-                          <div class="imagen-about">
-                            <img src="https://www.egames.news/__export/1614562245860/sites/debate/img/2021/02/28/cuxles_son_todos_los_modos_de_juego_online_para_csgo.jpg_1902800913.jpg" alt="">
-                               <h3>Jugar CSGO</h3>
-                          </div>
-                      </div>
-                  </div>
-                    
-                  <h3 class="titulo">Mis platos favoritos</h3>
-                    <div class="cuerpo-contenedor">
-                      <div class="galeria-about">
-                          <div class="imagen-about">
-                            <img src="https://decomidaperuana.com/wp-content/uploads/2020/10/lomo-saltado.jpg" alt="">
-                                <h3>Lomo Saltado</h3>
-                          </div>
-                          <div class="imagen-about">
-                            
-                            <img src="https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg" alt="">
-                               <h3>Ají de Gallina</h3>
-                          </div>
-                          <div class="imagen-about">
-                           <img src="https://comidasperuanas.net/wp-content/uploads/2016/11/Arroz-chaufa.jpg" alt="">
-                                <h3>Arroz Chaufa</h3>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <h3 class="titulo">Lugares a Donde He Viajado</h3>
-                    <div class="cuerpo-contenedor">
-                      <div class="galeria-about">
-                           <div class="imagen-about">
-                            <img src="imagen/lima.jpg" alt="">
-                                 <h3>Lima</h3>
-                           </div>
-                           <div class="imagen-about">
-                            <img src="imagen/huaraz.jpg" alt="">
-                                 <h3>Huaraz</h3>
-                           </div>
-                           <div class="imagen-about">
-                            <img src="imagen/chiclayo.jpeg" alt="">
-                                <h3>Chiclayo</h3>
-                          </div>
-                          <div class="imagen-about">
-                            <img src="imagen/piura.jpeg" alt="">
-                               <h3>Piura</h3>
-                          </div>
-                          <div class="imagen-about">
-                            <img src="imagen/ecuador.jpg" alt="">
-                               <h3>Ecuador</h3>
-                          </div>
-                      </div>
-                  </div>
-            </section>
+          
+          <h3 class="titulo">Mis Hobbies</h3>
 
+          <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="carousel-mod" data-bs-interval="10000">
+                <img src="https://www.mancomunidaddetentudia.com/portal/wp-content/uploads/2020/05/viajar-focus-0-0-983-557.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>VIAJAR</h5>
+                  <p>Ir visitando y conociendo las ciudades de mi pais y del mundo</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod" data-bs-interval="2000">
+                <img src="https://i0.wp.com/100lecciones.org/wp-content/uploads/Los-mejores-libros-para-aprender-a-tocar-guitarra-1.jpg?fit=699%2C400&ssl=1" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>GUITARRA</h5>
+                  <p>Una de mis grandes pasiones</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod">
+                <img src="https://hips.hearstapps.com/es.h-cdn.co/fotoes/images/cinefilia/15-curiosidades-sobre-la-serie-vikingos/logo/110709774-1-esl-ES/logo.jpg?resize=480:*" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod">
+                <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/03/27/15537190637376.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>HOLAAAAAAAAAA</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          <!-- ==============SEGUNDO SLIDER=====================-->
+          <!-- =======================================-->
+          <h3 class="titulo">Mis platos favoritos</h3>
+
+          <div id="carouselExampleOther" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleOther" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleOther" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleOther" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="carousel-mod" data-bs-interval="10000">
+                <img src="https://decomidaperuana.com/wp-content/uploads/2020/10/lomo-saltado.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>LOMO SALTADO</h5>
+                  <p>Ir visitando y conociendo las ciudades de mi pais y del mundo</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod" data-bs-interval="2000">
+                <img src="https://www.comedera.com/wp-content/uploads/2013/10/aji-de-gallina.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>AJÍ DE GALLINA</h5>
+                  <p>Una de mis grandes pasiones</p>
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod">
+                <img src="https://comidasperuanas.net/wp-content/uploads/2016/11/Arroz-chaufa.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ARROZ CHAUFA</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleOther" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleOther" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- ================TERCER SLIDER===================-->
+          <!-- =======================================-->
+          <h3 class="titulo">Lugares a Donde He Viajado</h3>
+          <div id="carouselExampleSlider3" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="carousel-mod" data-bs-interval="10000">
+                <img src="imagen/lima.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>LIMA</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod" data-bs-interval="2000">
+                <img src="imagen/huaraz.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>HUARAZ</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod">
+                <img src="imagen/chiclayo.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>CHICLAYO</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod">
+                <img src="imagen/piura.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>PIURA</h5>
+                  
+                </div>
+              </div>
+              <div class="carousel-item" id="carousel-mod">
+                <img src="imagen/ecuador.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ECUADOR</h5>
+                  
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlider3" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </main>
       
+         <!-- =======================================-->
+         <!-- =======================================-->
         <footer>            
             <div class="contenedor-footer">
               <div class="content-foo">
