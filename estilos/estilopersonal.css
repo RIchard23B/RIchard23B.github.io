@@ -133,9 +133,9 @@ body{
     margin: auto; /*Centrar todo*/
     overflow: hidden;
 }
-#carouselExampleSlider3{
+#carouselExampleSlider{
     width: 100%;
-    max-width: 1000px;
+    max-width: 900px;
     margin: auto; /*Centrar todo*/
     overflow: hidden;
     padding-bottom: 100px;
@@ -154,63 +154,75 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
+
 
 
 /*Contactos*/
-.contactame{
-    background-image: url(/imagen/csgo.png);
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    margin: 0;
+.container{
     display: flex;
+    justify-content: space-evenly;
 }
-.contactame > img{
-    margin: 120px;
-    height: 300px;
+.iconos-texto{
     display: flex;
-    background-size: cover;
-    position: relative;
+    justify-content: left;
+    text-align: center;
+    font-family:'Open Sans', sans-serif;
+}
+.iconos-texto p{
+    margin: 0px 0px 30px;
+    padding: 0 0 10px 50px;
+    
+}
+.icono{
+    color: aqua;
 }
 
 form{
-    
     width: 450px;
-    margin: auto;
     background: rgba(0, 0, 0, 0.4);
     padding: 20px 20px;
     box-sizing: border-box;
     margin-top: 50px;
     margin-bottom: 50px;
-    border-radius: 7px;
+    border-radius: 4px;
 }
-input, textarea{
-    font-family:'Courier New', Courier, monospace;
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7px;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
+.titulo-contacto{
+    padding-top: 100px;
+    padding-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: blueviolet;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px; /*Para distinguirlo de cada sección*/
 }
-textarea{
-    min-height: 100px;
-    max-height: 200px;
-    max-width: 100%;
+
+.section-title-divider{
+    width: 50px;
+    height: 3px;
+    background: #03C4EB;
+    margin: 0 auto;
+    margin-bottom: 60px;
 }
-#boton{
-    background: #31384A;
-    color: #fff;
-    padding: 20px;
-}
-#boton:hover{
-    cursor:pointer;
-}
+
 /*Responsive Contactos*/
-@media (max-width:480px){
+@media (max-width:900px){
     form{
         width: 100%;
     }
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #container-iconos{
+        padding-bottom: 80px;
+    }
+    .iconos-texto{
+        display: flex;
+        font-family:'Open Sans', sans-serif;
+    }
+
 }
 
 
