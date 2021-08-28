@@ -311,6 +311,12 @@ footer{
 }
 
 .social ul li a:hover {
-    background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    background: rebeccapurple; /* Cambiamos el fondo cuando el usuario pase el mouse */
     padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+@media screen and (max-width:900px){
+    .social ul li a:hover {
+        background: none; /* Cambiamos el fondo cuando el usuario pase el mouse */
+        padding: 0; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    }
 }
