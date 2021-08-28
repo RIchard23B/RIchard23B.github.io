@@ -232,27 +232,34 @@ footer{
     padding: 40px 0 20px 0;
     margin: auto;
     overflow: hidden;
+    
 }
 .contenedor-footer{
     display: flex;
-    width: 70%;
-    justify-content: space-evenly;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content:space-evenly;
     margin: auto;
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;/*Rayita abajo*/
 }
-.content-foo{
-    text-align: center;
+.indice{
+    display: flex;
 }
-.content-foo h4{
-    color: #fff;
-    border-bottom: 2px solid #af20d3;
+.lista a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+}
+.content-foo >img{
+    align-items: center;
     padding-bottom: 5px;
     margin-bottom: 10px;
+    width: 450px;
 }
-.content-foo p{
-    color: #ccc;
-}
+
 @media screen and (max-width:900px){
     footer{
         background-position: center;
@@ -265,9 +272,7 @@ footer{
     .content-foo{
         padding: 20px;
     }
-    .content-foo h4{
-        font-size: 20px;
-    }
+    
 }
 
 .titulo-final{
