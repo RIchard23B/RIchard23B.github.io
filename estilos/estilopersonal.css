@@ -144,6 +144,7 @@ body{
 .carousel-caption h5 p{
     color: white;
 }
+
 /*Para que el carousel tenga un tamaño estandar en las imagenes*/
 #carousel-mod {
     height: 65vh;
@@ -155,32 +156,6 @@ body{
     background-size: cover;
   }
 
-.galeria-about{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.imagen-about{
-    width: 24%;
-    margin-bottom: 60px;
-    overflow: hidden;
-}
-
-.imagen-about > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /*Soluciona error de la imagen, ancho y alto*/
-    display: block;
-}
-
-.imagen-about > h3{
-    position: absolute; /*Provoca que todo modifique su posición*/
-    z-index: 1;/*El menú queda en la parte de atrás, este lo trae adelante*/
-    font-size: 15pt;
-    padding-top: 20px;
-    padding-left: 20px;
-}
 
 /*Contactos*/
 .contactame{
