@@ -19,7 +19,6 @@ body{
 /*=========SLIDER==========*/
 .carousel-inner{
     max-height: 39rem;
-    
 }
 .slide{
     width: 100%;
@@ -31,10 +30,20 @@ body{
     background-size: cover;
     background-attachment: fixed;
     position:absolute;
+    
+}
+#carousel-modelo{
+    height: 64vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .momo{
-    padding-top: 250px;
+    padding-top: 200px;
     font-size: 40pt;
     color: white;
 }
@@ -45,6 +54,11 @@ body{
 .cuerpo-contenedor{
     padding-top: 20%;
 }
+.slideruno{
+    width: 1440px;
+    height: 900px;
+}
+
 @media screen and (max-width:900px){
     header{
         background-position: center;
@@ -53,6 +67,7 @@ body{
         max-height: 12rem;
         
     }
+    
     .coco{
         width: 1440px;
         height: 200px;        
@@ -76,7 +91,9 @@ body{
         padding: 1;
     }
     .cuerpo-contenedor .contenido-texto{
-        width: 90%;
+        width: 81%;
+        padding-left: 20px;
+        padding-right: 0;
     }
     .imagen-intro{
         display: none;
@@ -96,7 +113,7 @@ body{
 
 }
 .cuerpo-contenedor{
-    padding-bottom: 60px;
+    padding-bottom: 150px;
     width: 90%;
     max-width: 1000px;
     text-align: justify;
@@ -306,17 +323,36 @@ footer{
     -o-transition:all 500ms ease;
     transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
 }
+
 .facebook{
     padding: 2.5px;
+    
 }
 
-.social ul li a:hover {
-    background: rebeccapurple; /* Cambiamos el fondo cuando el usuario pase el mouse */
+.ln:hover {
+    background: #0e76a8; /* Cambiamos el fondo cuando el usuario pase el mouse */
     padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    border-radius: 2px;
 }
+.fb:hover {
+    background: #3b5998; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    border-radius: 2px;
+}
+.yt:hover {
+    background: #c4302b; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    border-radius: 2px;
+}
+.ig:hover {
+    background: #8134AF; /* Cambiamos el fondo cuando el usuario pase el mouse */
+    padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+    border-radius: 2px;
+}
+
 @media screen and (max-width:900px){
     .social ul li a:hover {
-        background: rebeccapurple; /* Cambiamos el fondo cuando el usuario pase el mouse */
+         /* Cambiamos el fondo cuando el usuario pase el mouse */
         padding: 10px 15px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
     }
 }
