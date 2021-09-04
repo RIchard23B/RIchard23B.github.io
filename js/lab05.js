@@ -29,7 +29,6 @@ function come(){
             console.log(apePaterno)
     });
 
-    
     //function datos(){
        
     //}
@@ -37,6 +36,21 @@ function come(){
     //tercero.innerHTML = nombreest;
 
     //console.log(tercero)
+})();
+
+(function(){
+
+    let boton = document.getElementById("extraer")
+
+    boton.addEventListener("click", function(){
+
+        let a = "nombre";
+        let b = "apellido";
+
+        longitudNombreCompleto.length = (a+b)
+});
+
+
 })();
 
 //COLOR 
