@@ -1,13 +1,11 @@
-
+//=============== Separar APELLIDOS Y NOMBRES ====================//
+    //===============================================================//
 (function (){
     
     let boton = document.getElementById("extraer")
     
 
     boton.addEventListener("click", function(){
-
-    //=============== Separar APELLIDOS Y NOMBRES ====================//
-    //===============================================================//
 
         const apeNom = document.getElementById('nombresComplet');
         let nombreCompleto = apeNom.value;
@@ -29,35 +27,56 @@
         }
         nombres = this.focus;
 
-    //===============LONGITUD DE ELEMENTOS====================//
-    //=======================================================//
-        const longitud = document.getElementById('longApe');
-        longitud.value = apeMaterno.value.length+apeMaterno.value.length;
-
-
-    //===============CALCULAR EDAD====================//
-    //===============================================//
-
-    let edades = document.getElementById("anio").value;
-    let mes = document.getElementById("mes").value;
-
-    var hoy = new Date();
-    var cumpleanos = new Date(edades);
-    var cumple = new Date(mes)
-    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
-    var m = hoy.getMonth() - cumple.getMonth();
-
-    if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
-        edad--;
-
-    }
-    document.getElementById("edad").value = edad;
-
 
     });
 
 })();
 
+//=============== LONGITUD DE APELLIDOS ====================//
+//===============================================//
+(function(){
+
+    let boton = document.getElementById("extraer")
+
+    boton.addEventListener("click", function(){
+
+        //let nombre = document.getElementById("nombresComplet").value;
+        let texto = document.getElementById("apePaterno").value;
+        let mater = document.getElementById("apeMaterno").value;
+
+        let glob = texto + mater;
+
+        document.getElementById("longApe").value = (" " + glob.length + " caracteres");
+        
+
+    });
+
+})();
+
+//===============CALCULAR EDAD====================//
+//===============================================//
+(function(){
+
+    let boton = document.getElementById("extraer")
+
+    boton.addEventListener("click", function() {
+
+        let edades = document.getElementById("anio").value;
+        let mes = document.getElementById("mes").value;
+
+        var hoy = new Date();
+        var cumpleanos = new Date(edades);
+        var cumple = new Date(mes)
+        var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+        var m = hoy.getMonth() - cumple.getMonth();
+    
+        if (m < 0 || (m === 0 && hoy.getDate() < cumpleanos.getDate())) {
+            edad--;
+
+        }
+        document.getElementById("edad").value = edad;
+    });
+})();
 
 //=============== FECHA EN LETRAS ====================//
 //===============================================//
